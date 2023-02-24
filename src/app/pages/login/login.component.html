@@ -1,0 +1,142 @@
+<!-- <div class="container">
+    <div class="left-side">
+      <div class="title">
+        <h1>Get Started Now</h1>
+        <h3>Enter your credentials to access your account</h3>
+      </div>
+      <div class="two-login-button">
+        <div>
+          <button
+            *ngIf="!authService.user"
+            (click)="authService.loginWithGoogle()"
+            class="google-login-button"
+          >
+            <img
+              class="google-pic"
+              src="https://th.bing.com/th/id/OIP.yL98CHypeT0JQEKEVwf_rAHaHa?w=176&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7"
+            />Log In with Google
+          </button>
+        </div>
+        <div>
+          <button class="apple-login-button">
+            <img
+              class="google-pic"
+              src="https://th.bing.com/th/id/R.b7cbbd8cc5ea8a07563a8fd40b90340f?rik=d1BGQqYGjmH11A&riu=http%3a%2f%2fcache1.bigcartel.com%2fproduct_images%2f2498377%2fapple-logo.jpg&ehk=k%2fDINzkA4e4jPF9%2bMyAleJjNiSa1vx66GZbR%2b93LQCI%3d&risl=&pid=ImgRaw&r=0"
+            />Log In with Apple
+          </button>
+        </div>
+      </div>
+      <div class="line"><hr /></div>
+      <div class="input-place">
+        <label class="label-name" for="fname">Full Name </label>
+        <input
+          class="input-text"
+          type="text"
+          placeholder="Eg: Jack Sparrow,..."
+        />
+        <label class="label-name" for="fname">Email </label>
+        <input
+          class="input-text"
+          type="email"
+          placeholder="jack_sparrow@gmail.com..."
+        />
+        <label class="label-name" for="fname">Password </label>
+        <input class="input-text" type="password" placeholder="Min 8 chars" />
+      </div>
+      <div class="check-box">
+        <input type="checkbox" />
+        <label for="terms"> I agree to the <u>Terms & Privacy</u></label
+        ><br />
+      </div>
+      <button class="big-login-button">LOGIN</button>
+      <div class="account-asking">
+        <h3>Have an account ? <i style="color: blue">Sign in</i></h3>
+      </div>
+    </div>
+    <div class="right-side">
+      <h1 class="run-way-title">WELLCOME TO RUNWAY CLUB</h1>
+      <img
+        class="run-way-img"
+        src="https://social.runwayclub.dev/images/iCEg4Xx5aMcga-U-8mB6I0Nw_F1gWqr8RXY1rHI2E34/w:420/mb:500000/aHR0cHM6Ly9zb2Np/YWwucnVud2F5Y2x1/Yi5kZXYvdXBsb2Fk/cy9hcnRpY2xlcy9m/MmIxaWV5emw1NmFo/cGl0cWI0Yy5wbmc"
+      />
+      <div class="join-us">
+        <img
+          class="run-way-logo"
+          src="https://social.runwayclub.dev/images/yH4VwArzNaZtMSh-qdqGMv2tRXUR5Znhz66ov__DZyA/w:420/mb:500000/aHR0cHM6Ly9ydW53/YXkuaXRzcy5lZHUu/dm4vYXNzZXRzL2lt/YWdlcy9ydW53YXkt/NTEyLWxvZ28ucG5n"
+        />
+        <h1 class="join-us-text">JOIN WITH US</h1>
+      </div>
+    </div>
+  </div>
+   -->
+<div class="container">
+  <div class="navbar">
+    <div class="navbar-content">
+      <div class="apple-name">Apple</div>
+      <ul class="list-content">
+        <li>Product</li>
+        <li>Resources</li>
+        <li>Support</li>
+        <li>Pricing</li>
+        <li>Blog</li>
+      </ul>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <div class="search-container">
+        <form action="">
+          <button id="search-button" type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="main-content">
+    <span class="login-header">Login to Your Account</span>
+    <div class="two-login-button">
+      <div>
+        <button
+          *ngIf="!authService.user"
+          (click)="authService.loginWithGoogle()"
+          class="google-login-button"
+        >
+          <img
+            class="google-pic"
+            src="https://th.bing.com/th/id/OIP.yL98CHypeT0JQEKEVwf_rAHaHa?w=176&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7"
+          />Log In with Google
+        </button>
+      </div>
+      <div>
+        <button class="apple-login-button">
+          <img
+            class="google-pic"
+            src="https://th.bing.com/th/id/R.b7cbbd8cc5ea8a07563a8fd40b90340f?rik=d1BGQqYGjmH11A&riu=http%3a%2f%2fcache1.bigcartel.com%2fproduct_images%2f2498377%2fapple-logo.jpg&ehk=k%2fDINzkA4e4jPF9%2bMyAleJjNiSa1vx66GZbR%2b93LQCI%3d&risl=&pid=ImgRaw&r=0"
+          />Log In with Apple
+        </button>
+      </div>
+    </div>
+    <div class="line"><hr /></div>
+    <div class="input-place">
+      <label class="label-name" for="fname">Full Name </label>
+      <input
+        class="input-text"
+        type="text"
+        placeholder="Eg: Jack Sparrow,..."
+      />
+      <label class="label-name" for="fname">Email </label>
+      <input
+        class="input-text"
+        type="email"
+        placeholder="jack_sparrow@gmail.com..."
+      />
+      <label class="label-name" for="fname">Password </label>
+      <input class="input-text" type="password" placeholder="Min 8 chars" />
+    </div>
+    <button class="big-login-button">LOGIN</button>
+    <div class="account-asking">
+      <h3>Have an account ? <i style="color: blue">Sign in</i></h3>
+    </div>
+  </div>
+</div>

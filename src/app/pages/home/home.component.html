@@ -1,0 +1,17 @@
+<div *ngFor="let item of (this.item$ | async)?.item ?? []">
+  <img [src]="item.image" />
+  <p>{{ item.name }}</p>
+  <p>{{ item.description }}</p>
+  <p>{{ item.price }}</p>
+</div>
+
+<button
+  class="log-out-button"
+  [routerLink]="['/login']"
+  *ngIf="authService.user"
+  (click)="authService.logOut()"
+>
+  <img [src]="authService.user.photoURL" />
+  <a>{{ authService.user.displayName }}</a
+  ><br />Log out
+</button>
